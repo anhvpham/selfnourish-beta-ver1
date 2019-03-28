@@ -1,0 +1,37 @@
+.search-form-div {
+		margin: 40px 0px 20px 0px;
+    display: grid;
+    grid-template-columns: 3fr 8fr 1fr
+}
+
+.search-input{
+    font-family: 'Raleway', sans-serif;
+    font-size: 1em;
+    font-weight: normal;
+    font-style: italic;
+    line-height: 1;
+    border: none;
+    border-bottom: grey solid 2px;
+    padding: 5px;
+    margin: 0 5px;
+}
+
+.search-field-container{
+    display: grid;
+    grid-template-columns: 30px 1fr;
+}
+
+.suggestions-div{
+	margin: 15px 0px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.what-ingredient-p{
+	font-family: 'Raleway', sans-serif;
+  font-size: 1em;
+  font-weight: 700;
+  line-height: 1.4;
+  color: rgb(92, 92, 92);
+}
