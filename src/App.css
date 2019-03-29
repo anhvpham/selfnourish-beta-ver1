@@ -128,7 +128,8 @@ body {
 	border-width: 3px;
 	border-style: solid;
 	font-family: Quicksand, sans-serif;
-	font-size: 1em;
+	font-size: 1.3em;
+	/* font-size: 1em; */
 	line-height: 0.5em;
 	font-weight: 700;
   border-radius: 40px;
@@ -137,33 +138,25 @@ body {
   vertical-align: middle;
 }
 
+
+.button-large:hover {
+ cursor: pointer;
+}
+
+.button-large:focus {
+  outline-color: white;
+}
+
 .button-orange {
   border-color: #ff8500;
   color: white;
   background-color: #ff8500;
 }
 
-.button-orange:hover{
- cursor: pointer;
-}
-
-.button-orange:focus{
-  outline-color: white;
-}
-
 .button-green {
-  padding: 5px 25px;
   border: 3px solid #90d200;
-  font-size: 0.875em;
-  font-family: 'Quicksand', sans-serif;
-  font-weight: 700;
   color: white;
-  border-radius: 40px;
-  height: 40px;
   background-color: #90d200;
-  text-align: center;
-  vertical-align: middle;
-
 }
 
 

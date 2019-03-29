@@ -104,7 +104,7 @@ class Condition extends React.Component {
 											Search Recipes
 										</LinkButton> */}
 
-										<button className="button-orange search-recipe-button" onClick={()=>{this.redirectToSearch()}}> Search Recipes </button>
+										<button className="button-orange button-large search-recipe-button" onClick={()=>{this.redirectToSearch()}}> Search Recipes </button>
                 </div>
                 <p>Select a condition to view general guidelines and recipes for a healthy diet: </p>
                 <ul className="conditions-list">

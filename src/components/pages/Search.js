@@ -67,7 +67,7 @@ class Search extends Component {
 								ref={input => this._name = input}/>
 						</div>
 						<div className="input-field col s2">
-							<button className="button-orange"
+							<button className="button-large button-green"
 									type="submit" name="action">Search</button>
 						</div>
 					</div>

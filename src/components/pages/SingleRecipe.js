@@ -65,13 +65,13 @@ class App extends React.Component {
 			document.body.scrollTop = 0;
 			document.documentElement.scrollTop = 0;
       return (
-        <div className="App">
+        <div className="main-wrapper">
           <RecipeItem recipe={this.state.currentRecipe}/>
 					<hr className="horizontal-separator"/>
           <IngredientsList recipe={this.state.currentRecipe}/>
 					<hr className="horizontal-separator"/>
           <NutritionFactsContainer recipe={this.state.currentRecipe}/>
-					<div className="favourite-div"><button className="favourite-button button-green" onClick={()=>{this.redirectToSearch()}}>Add to Favourites</button></div>
+					<div className="favourite-div"><button className="button-large button-green" onClick={()=>{this.redirectToSearch()}}>Add to Favourites</button></div>
 					<SearchRecipe
 						title = "Related Recipes"
 						isGrouped = {false} //indicates if this section belongs to the same team of other elements on the page

@@ -73,24 +73,24 @@ class RecipeCard extends React.Component {
               title={this.props.recipe.recipeName}
             />
             
-            <CardContent>
-              <Typography component="p">
+            <CardContent data="recipe-card-content">
+              <Typography data="recipe-card-name" component="p">
                 {this.props.recipe.recipeName}
               </Typography>
-              <Typography component="p">
+              <Typography data="recipe-card-author" component="p">
                 by {this.props.recipe.sourceDisplayName}
               </Typography>
             </CardContent>
 
-        </CardActionArea>
-        <CardActions className={classes.actions} disableActionSpacing>
+        </CardActionArea >
+        <CardActions className={classes.actions} data="recipe-card-footer" disableActionSpacing>
           <IconButton onClick={this.handleExpandClick} aria-label="Add to favorites">
             <FavoriteIcon />
           </IconButton>
           <IconButton onClick={this.handleExpandClick} aria-label="Share">
             <ShareIcon />
           </IconButton>
-          <div className="recipe-rating">
+          <div className="recipe-card-rating">
             {this.props.recipe.rating}
             <StarIcon/>
           </div>
