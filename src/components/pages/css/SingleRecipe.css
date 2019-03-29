@@ -355,7 +355,7 @@ div[data="recipe-card-footer"] svg{
 	grid-template-columns: 1fr 1fr;
 	grid-template-rows: repeat(2, auto);
 	width: 90%;
-	margin: auto;
+	margin: 20px auto;
 }
 
 .recipe-data-container{

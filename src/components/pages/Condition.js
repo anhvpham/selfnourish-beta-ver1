@@ -103,10 +103,12 @@ class Condition extends React.Component {
 										{/* <LinkButton className="button-orange search-recipe-button" to={{pathname: '/render/search', state: {condition: this.state.selectedCondition}}}>
 											Search Recipes
 										</LinkButton> */}
-
-										<button className="button-orange button-large search-recipe-button" onClick={()=>{this.redirectToSearch()}}> Search Recipes </button>
-                </div>
-                <p>Select a condition to view general guidelines and recipes for a healthy diet: </p>
+               </div>
+							 <div className="condition-search-button">
+								<button className="button-orange button-large search-recipe-button" onClick={()=>{this.redirectToSearch()}}> Search Recipes </button>
+							 </div>
+ 
+                <p className="condition-subtitle">Select a condition to view general guidelines and recipes for a healthy diet: </p>
                 <ul className="conditions-list">
                     {listItems};
                 </ul>
@@ -114,13 +116,10 @@ class Condition extends React.Component {
             <section className="general-guideline-section">
                 <h2 className="heading-2">General Guidelines</h2>
                 <div className="general-guideline-wrapper">
-                    <div>
-                        <SimpleBarChart nutrientsList={conditions[this.state.selectedCondition.id].nutrientIntake}></SimpleBarChart>
-                        
-                    </div>
-                    <div>
+										<SimpleBarChart nutrientsList={conditions[this.state.selectedCondition.id].nutrientIntake}></SimpleBarChart>
+                    <div className="general-guideline-description">
                         <h3 className="heading-3">{conditions[this.state.selectedCondition.id].name}</h3>
-                        {conditions[this.state.selectedCondition.id].guidelines.map((line) => <p key={line} className="paragraph-small">{line}</p>
+                        {conditions[this.state.selectedCondition.id].guidelines.map((line) => <p key={line} className="paragraph">{line}</p>
                             
                         )}
                     </div>
@@ -128,7 +127,7 @@ class Condition extends React.Component {
             </section>
             <section className="related-recipes-section">
 							<SearchRecipe
-								title = {(this.state.searchIgredient==='')? "Popular Recipes" : "Recommended Recipes"}
+								title = {(this.state.selectedCondition.id===0)? "Popular Recipes" : "Recommended Recipes"}
 								nutrientConstraints = {this.state.selectedCondition.nutrientConstraints}
 								retrieveRecipe={this.retrieveRecipe.bind(this)}
 							/>

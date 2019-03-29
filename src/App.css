@@ -249,3 +249,11 @@ ul li:last-child a{
   border-radius: 20px;
   float: right;
 }
+
+@media screen and (min-width: 800px) {
+.button-large{
+	font-size: 1em;
+	height: 35px;
+}
+
+}
