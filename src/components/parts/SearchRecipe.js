@@ -19,8 +19,8 @@ class SearchRecipe extends Component {
 	searchRecipes(ingredient, nutrientConstraints){
 		this.setState({ isLoading: true });
 
-		// let requestURL = `http://api.yummly.com/v1/api/recipes?_app_id=${process.env.REACT_APP_YUMMLY_APP_ID}&_app_key=${process.env.REACT_APP_YUMMLY_API_KEY}`
-		let requestURL = `https://api.yummly.com/v1/api/recipes?_app_id=54fce035&_app_key=14d9a1aa6dfd905115577804346a9746`
+		let requestURL = `http://api.yummly.com/v1/api/recipes?_app_id=${process.env.REACT_APP_YUMMLY_APP_ID}&_app_key=${process.env.REACT_APP_YUMMLY_API_KEY}`
+		//let requestURL = `https://api.yummly.com/v1/api/recipes?_app_id=54fce035&_app_key=14d9a1aa6dfd905115577804346a9746`
 		let query='&maxResult=20&requirePictures=true&excludedCourse[]=course^course-Beverages'
 
  		if (ingredient) {
