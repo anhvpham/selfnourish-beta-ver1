@@ -128,6 +128,7 @@ class Condition extends React.Component {
             <section className="related-recipes-section">
 							<SearchRecipe
 								title = {(this.state.selectedCondition.id===0)? "Popular Recipes" : "Recommended Recipes"}
+								isGrouped = {true} //indicates if this section belongs to the same team of other elements on the page
 								nutrientConstraints = {this.state.selectedCondition.nutrientConstraints}
 								retrieveRecipe={this.retrieveRecipe.bind(this)}
 							/>

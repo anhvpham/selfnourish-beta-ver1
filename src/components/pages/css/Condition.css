@@ -12,6 +12,8 @@ section h2{
 .condition-section{
 	display: grid;
 	grid-template-rows: repeat(4, auto);
+	justify-content: center;
+	width: 100%;
 }
 
 .condition-subtitle{
@@ -39,7 +41,7 @@ section h2{
 	padding: 0px;
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-between;
+	justify-content: space-evenly;
 	margin: 10px 0px;
 }
 
@@ -108,23 +110,27 @@ section h2{
 	margin: auto;
 }
 
-section{
+.condition-wrapper section{
 	margin: 15px 0px;
 	padding: 1px 0px;
 }
 
-section h2{
+.condition-wrapper section h2{
 	margin: 0px;
 	text-align: left;
+	margin-bottom: 15px;
 }
 
 .condition-section{
 	grid-template-rows: repeat(3, auto);
 	grid-template-columns: repeat(2, auto);
 	margin-bottom: 40px;
+	width: 100%;
+	justify-content: stretch;
 }
 
 .condition-section-header{
+	width: 100%;
 	grid-column: 1 / 2;
 	text-align: left;
 }
@@ -155,6 +161,7 @@ section h2{
 .general-guideline-wrapper{
     display: grid;
     grid-template-columns: 400px auto;
+		margin-bottom: 0px;
 }
 
 .search-recipe-button{

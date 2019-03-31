@@ -18,6 +18,12 @@ class RecipeList extends Component {
 
 	render() {
 
+		if (this.props.list.length===0){
+			return(
+				<div>Sorry, no recipes found.</div>
+			)
+		}
+
 		return (
 
 			<section className="recipe-list" style={{marginBottom: "4rem"}}>

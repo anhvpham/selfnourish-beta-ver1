@@ -51,10 +51,10 @@ class Search extends Component {
 		}
 
     return (
-      <div>
+      <div className="search-wrapper">
 				<form onSubmit={this.handleSubmit}>
 					<div className="search-form-div">
-						<div className="heading-2">Search Recipes</div>
+						<div className="search-form-label heading-2">Search Recipes</div>
 						<div className="search-field-container">
 							<Icon path={mdiMagnify} size={1.5} rotate={90} color={"grey"}/>
 							<input
@@ -66,13 +66,13 @@ class Search extends Component {
 								placeholder="Enter ingredient"
 								ref={input => this._name = input}/>
 						</div>
-						<div className="input-field col s2">
-							<button className="button-large button-green"
+						<div className="search-button-div">
+							<button className="search-button button-large button-orange"
 									type="submit" name="action">Search</button>
 						</div>
 					</div>
 				</form>
-				<p className="paragraph what-ingredient-p">What ingredients you want to start with?</p>
+				<p className="what-ingredient-p">What ingredients you want to start with?</p>
 				<div className="suggestions-div">
 					<button className="button-suggestions" onClick={this.suggestionClick} value="Salmon">Salmon</button>
 					<button className="button-suggestions" onClick={this.suggestionClick} value="Egg">Egg</button>
@@ -84,6 +84,7 @@ class Search extends Component {
 				</div>
         <SearchRecipe
           title = {(this.state.searchIgredient==='')? "Popular Recipes" : "Recommended Recipes"}
+					isGrouped = {true} //indicates if this section belongs to the same team of other elements on the page
           ingredient = {this.state.searchIngredient}
 					nutrientConstraints = {this.props.match.params.nutrientConstraints}
 					retrieveRecipe={this.retrieveRecipe.bind(this)}

@@ -1,5 +1,7 @@
 .App {
   text-align: center;
+	/* max-width: 1000px;
+	margin: auto; */
 }
 
 .App-logo {
@@ -114,15 +116,6 @@ body {
   color: rgb(92, 92, 92);
 }
 
-.button-normal{
-	padding: 15px 25px;
-	border-width: 3px;
-	border-style: solid;
-	font-family: Quicksand, sans-serif;
-	font-size: 0.875em;
-	font-weight: 700;
-}
-
 .button-large{
 	padding: 10px 25px;
 	border-width: 3px;
@@ -138,7 +131,6 @@ body {
   vertical-align: middle;
 }
 
-
 .button-large:hover {
  cursor: pointer;
 }
@@ -153,10 +145,21 @@ body {
   background-color: #ff8500;
 }
 
+.button-orange:hover {
+	border-color: #ffab48;
+	background-color: #ffab48;
+}
+
 .button-green {
   border: 3px solid #90d200;
   color: white;
   background-color: #90d200;
+}
+
+.button-green:hover {
+	border: 3px solid #b8ef40;
+  color: rgb(71, 71, 71);;
+  background-color: #b8ef40;	
 }
 
 
@@ -251,9 +254,17 @@ ul li:last-child a{
 }
 
 @media screen and (min-width: 800px) {
+
 .button-large{
-	font-size: 1em;
 	height: 35px;
+	padding: auto 25px;
+	border-width: 3px;
+	border-style: solid;
+	font-family: Quicksand, sans-serif;
+	font-size: 1em;
+	line-height: .2em;
+	font-weight: 700;
 }
 
 }
+

@@ -67,7 +67,7 @@ class App extends React.Component {
 			document.body.scrollTop = 0;
 			document.documentElement.scrollTop = 0;
       return (
-        <div className="main-wrapper">
+        <div className="single-recipe-wrapper">
           <RecipeItem recipe={this.state.currentRecipe}/>
 					<hr className="horizontal-separator"/>
           <IngredientsList recipe={this.state.currentRecipe}/>

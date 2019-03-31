@@ -31,8 +31,6 @@ class SearchRecipe extends Component {
 			query = query + nutrientConstraints
 		}
 
-		
-
 		fetch(requestURL+query)
 			.then(response => {
 				if (response.ok) {
