@@ -2,6 +2,7 @@ import React, { Component } from "react"
 import Grid from "@material-ui/core/Grid"
 import { withStyles, MuiThemeProvider } from "@material-ui/core/styles"
 import Button from "@material-ui/core/Button"
+import { NavLink } from "react-router-dom"
 
 import InformationBlock from "./InformationBlock"
 
@@ -115,10 +116,12 @@ const styles = (theme, props) => ({
 
           
           <Grid item xs={12} md={5} className={classes.item3}>
+             <NavLink exact to='/recipes'  className={classes.link} >
             <Button color="primary" className={classes.button} variant="extended" size="large">
 
                TRY IT NOW 
             </Button>
+          </NavLink> 
         </Grid>
         
             </Grid>
