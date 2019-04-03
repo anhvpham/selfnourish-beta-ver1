@@ -106,7 +106,8 @@ section h2{
 @media screen and (min-width: 800px) {
 
 .condition-wrapper{
-	max-width: 1000px;
+/* 	max-width: 1000px; */
+	max-width:75rem;
 	margin: auto;
 }
 
