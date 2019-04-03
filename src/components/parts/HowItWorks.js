@@ -106,11 +106,12 @@ const styles = theme => ({
 
   container_3:{
     padding: "40px 50px",
-
+    fontSize:"22px",
     [theme.breakpoints.down("sm")]: {
     
       textAlign:"center",
       padding:"0px",
+      fontSize:"16px",
      
     }  
     
