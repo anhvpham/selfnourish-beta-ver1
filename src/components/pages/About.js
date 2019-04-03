@@ -3,9 +3,8 @@ import Typography from "@material-ui/core/Typography"
 import { withStyles } from "@material-ui/core/styles"
 import Button from "@material-ui/core/Button"
 
+
 import AboutCard from "../parts/AboutCard"
-import Header from "../../components/containers/Header"
-import Footer from "../../components/containers/Footer"      
 
 
 //members photo
@@ -14,7 +13,7 @@ import marcia from "../../assets/team/marcia.jpg"
 import tanya from "../../assets/team/tanya.jpg"
 import merry from "../../assets/team/merry.jpg"
 import yukako from "../../assets/team/yukako.jpg"
-import { Divider } from "@material-ui/core";
+
 
 
 const styles = theme => ({
@@ -27,11 +26,16 @@ const styles = theme => ({
     button: {
         color:"white",
         fontWeight:"bold",
-       // margin:"50px"
+        marginBottom:"40px",
+      
     },
 
+    
    
 })
+
+
+
 
 
 const About = props => {
@@ -39,19 +43,22 @@ const About = props => {
 
     return(
         <div className="aboutus">
-        <Header />
+        {/* <Header /> */}
         <AboutCard 
             header_1="About Us"
-            para_1="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec posuere diam id nunc sodales ullamcorper. Sed congue lacus sit amet lectus posuere volutpat"
+            para_1="We are health-conscious creators. Our team believes it is possible that people still can enjoy their daily diet even if they are having chronic conditions"
             align="center"
         
 
             header_2= "Team Members"
+        
+       
 
             img_1={vu}
             headerName_1="Vu Anh Pham"
             position_1="Project Manager / Frontend Developer"
-
+            
+        
             img_2={marcia}
             headerName_2="Marcia Emi Isejima"
             position_2="Backend developer / QA"
@@ -76,12 +83,13 @@ const About = props => {
         
         />
        
+       
         <Button color="primary" className={classes.button} variant="contained" size="large">
 
         Contact Us
         </Button>
 
-        <Footer />
+      
 
 
         </div>
