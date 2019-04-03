@@ -58,7 +58,6 @@ const Plans = props => {
             
             para_3={[<ul><li>Prefered For Single User</li>
                 <li>Recieve One Free Consult From Experts For Meal Plan</li>
-                <li>Able To Create Meal Plan </li>
                 <li>Customize Ingredient List Based On Personal Need</li>
                 <li>Add Up To 20 Favorite Recipes</li>
                 </ul>]
@@ -70,6 +69,7 @@ const Plans = props => {
 
             para_4={[<ul><li>Prefered For Health Professionals</li>
                 <li>Manage Up To 10 Profiles</li>
+                <li>Able To Create Meal Plan </li>
                 <li>Upload And Edit Recipes</li>
                 <li>Add Up To 50 Favorite Recipes</li>
                 </ul>]}
