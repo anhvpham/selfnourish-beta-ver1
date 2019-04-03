@@ -59,15 +59,14 @@ const styles = theme => ({
     
       cssOutlinedInput: {
         '&$cssFocused $notchedOutline': {
-          //borderColor: "black",
+        
           fontFamily:"Raleway"
         }
       },
     
       cssFocused: {},
       notchedOutline: {
-        //borderWidth: '1px',
-        //borderColor: 'black !important',
+        
         backgroundColor: "white",
         borderRadius: "25px",
         
