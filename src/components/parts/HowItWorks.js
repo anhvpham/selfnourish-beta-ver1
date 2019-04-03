@@ -120,10 +120,12 @@ const styles = theme => ({
   item_1 :{
     paddingTop:"20px",
     marginTop:"10px",
+    width:"400px",
     
     [theme.breakpoints.down("sm")]: {
     
       margin:"10px",
+      width:"200px",
      
     }  
   },
