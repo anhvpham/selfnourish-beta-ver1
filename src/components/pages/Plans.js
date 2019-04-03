@@ -82,7 +82,7 @@ const Plans = props => {
                 
         />
        
-        <Button color="primary" className={classes.button} variant="contained" size="large">
+        <Button href="/contact" color="primary" className={classes.button} variant="contained" size="large">
 
             STAY UPDATED
         </Button>
