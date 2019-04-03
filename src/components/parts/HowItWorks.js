@@ -14,8 +14,16 @@ const styles = theme => ({
     margin: "0px 50px",
     padding: "0px 40px",
     marginBottom:"-100px",
-    textAlign:"left"
-    
+    textAlign:"left",
+
+    [theme.breakpoints.down("sm")]:{
+
+      marginTop:"30px",
+      textAlign:"center",
+      margin: "0px 30px",
+      textAlign:"center",
+
+    },
     
   },
   container: {
@@ -28,8 +36,6 @@ const styles = theme => ({
 
   item:{
     
-   
-
 
 
     
@@ -42,10 +48,14 @@ const styles = theme => ({
     
     borderRadius:"50%",
     
+    
     [theme.breakpoints.down("sm")]: {
       display: "none"
-    }  
+    },  
     
+    [theme.breakpoints.up("md")]: {
+      marginBottom:"-10px",
+    }  
   },
 
   button:{
@@ -80,24 +90,41 @@ const styles = theme => ({
     marginTop:"20px",
     fontStyle:"italic",
     fontFamily:"Raleway",
-    padding:"90px 0px 40px 0px",
+    // padding:"90px 0px 40px 0px",
 
     [theme.breakpoints.down("sm")]: {
       "border-top-left-radius":"25px" ,
       "border-bottom-left-radius":"25px",
       textAlign:"center",
-    }  
+      padding:"20px",
+    } , 
+
+    [theme.breakpoints.up("md")]: {
+      padding:"90px 0px 40px 0px",
+    }
   },
 
   container_3:{
     padding: "40px 50px",
+
+    [theme.breakpoints.down("sm")]: {
+    
+      textAlign:"center",
+      padding:"0px",
+     
+    }  
     
   },
 
   item_1 :{
     paddingTop:"20px",
-    marginTop:"10px"
+    marginTop:"10px",
     
+    [theme.breakpoints.down("sm")]: {
+    
+      margin:"10px",
+     
+    }  
   },
 
 
@@ -127,13 +154,20 @@ const HowItWorks = props => {
          <img className={classes.img} src={props.img} alt={props.alt} />  
         </Grid>
 
-        <Grid item xs={12} md={4} alignItems="stretch" spacing={20} className={classes.container_2}>  
+        <Grid item xs={12} md={3} alignItems="stretch" spacing={20} className={classes.container_2}>  
           <InformationBlock
             headline={props.headline}
             className={classes.item}
             
           />
-          {props.button && (
+
+        <Grid item xs={12} md={6} className={classes.item3}>
+            <Button color="primary" className={classes.button} variant="extended" size="large">
+
+               TRY IT NOW 
+            </Button>
+        </Grid>
+          {/* {props.button && (
               <Button
               href="#"
               color="primary"
@@ -143,7 +177,7 @@ const HowItWorks = props => {
               >
                 {props.button}
               </Button>
-            )}
+            )} */}
           
         </Grid>
         
