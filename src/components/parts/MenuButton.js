@@ -9,6 +9,7 @@ import  { isWidthDown } from "@material-ui/core/withWidth";
 
 
 const styles = theme => ({
+
   menuButton: {
     [theme.breakpoints.up("md")]: {
       display: "none"
@@ -52,6 +53,8 @@ class MenuButton extends Component {
         collapsed.style.position = "static";
         collapsed.style.zIndex = 1450;
         collapsed.style.color = "orange";
+
+
 
       }
     }
