@@ -11,8 +11,12 @@ const styles = theme => ({
   root: {
     margin: "auto",
     padding: "60px 40px",
-    marginTop:"60px"
-     
+    marginTop:"60px",
+    height:"65vh",
+    [theme.breakpoints.down('sm')]:{
+      height:"80vh",
+      marginTop:"0px",
+    } 
   },
   container: {
     maxWidth: "75rem",
@@ -25,21 +29,7 @@ const styles = theme => ({
     },
     margin: "20px 0"
   },
-//   icon: {
-//     marginBottom: "-5px",
-//     marginRight: "10px",
-//     cursor: "pointer",
-//     "&:hover": {
-//       opacity: 0.8
-//     }
-//   },
-//   socialIcon: {
-//     marginRight: "20px",
-//     cursor: "pointer",
-//     "&:hover": {
-//       opacity: 0.8
-//     }
-//   },
+
   cssLabel: {
     color: 'black',
     
@@ -58,6 +48,20 @@ const styles = theme => ({
     borderColor: 'white !important'
   },
 
+  button:{
+    color:"white",
+    textTransform:"uppercase",
+    "&:hover":{
+      color:"white",
+      background:theme.palette.primary.main,
+    },
+
+    [theme.breakpoints.down('sm')]:{
+      marginTop:"40px",
+    }
+
+
+  }
   
 })
 
@@ -119,7 +123,7 @@ function form(classes, _class, button) {
             }}
           />
         </Grid>
-        <Button href="#" color="primary" className={button} variant="contained" size="large">
+        <Button href="#" color="primary" className={classes.button} variant="contained" size="large">
           Submit
         </Button>
       </Grid>
