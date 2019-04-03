@@ -4,7 +4,7 @@ import { withStyles } from "@material-ui/core/styles"
 import InformationBlock from "./InformationBlock"
 import List from '@material-ui/core/List';
 import Button from "@material-ui/core/Button"
-
+import { NavLink } from "react-router-dom"
 
 
 const styles = theme => ({
@@ -162,10 +162,12 @@ const HowItWorks = props => {
           />
 
         <Grid item xs={12} md={6} className={classes.item3}>
+           <NavLink exact to='/recipes'  className={classes.link} >
             <Button color="primary" className={classes.button} variant="extended" size="large">
 
                TRY IT NOW 
             </Button>
+          </NavLink> 
         </Grid>
           {/* {props.button && (
               <Button
