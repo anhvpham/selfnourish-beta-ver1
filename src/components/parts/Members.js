@@ -92,7 +92,7 @@ function LinkedinIcon1(props) {
             <Typography variant="body1" color="primary" align="center" className={classes.position}>
             {props.position}
             </Typography>
-            {/* <hr/> */}
+          
 
           </div>
       )
