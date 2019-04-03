@@ -6,8 +6,7 @@ import { Link, animateSrcroll as scroll } from "react-scroll";
 import { NavLink } from "react-router-dom"
 import {Grid} from "@material-ui/core/Grid";
 
-
-
+//parts
 import MenuButton from  "../parts/MenuButton"
 
 //import Logo
@@ -25,17 +24,19 @@ const styles = theme => ({
     top: 0,
    
     fontSize:"18px",
-     
+    background:"transparent",
     
   },
 
   wrapper: {
     [theme.breakpoints.down("sm")]: {
       display: "none",
-      top: "100px !important",
+      top: "60px !important",
       left: "0",
       width: "100%",
-      height: "100vh",
+      height: "60vh",
+
+     
       
     },
     [theme.breakpoints.up("md")]: {
@@ -44,6 +45,8 @@ const styles = theme => ({
       "align-items": "center"
     },
     width: "100%",
+    
+  
     
     
   },
@@ -66,30 +69,24 @@ const styles = theme => ({
     fontSize:"20px",
     textTransform:"uppercase",
     [theme.breakpoints.down("sm")]: {
+      
+      padding:"20px",
+      textAlign:"center",
       "&:hover": {
         
         color: theme.palette.primary.main,
       },
       "&:.active": {
-        textDecoration: theme.palette.primary.main
+        color: theme.palette.primary.main
       },
+
+
     },
   
     margin: "0 50px",
     marginLeft:0,
     color:"black",
     fontWeight: "bold",
-
-    [theme.breakpoints.down("sm")]: {
-      margin: "20px",
-      textAlign: "center",
-    },
-    "&:hover": {
-      color: theme.palette.primary.main
-    },
-    "&:.active": {
-      textDecoration: theme.palette.primary.main
-    },
     cursor: "pointer"
 
   },
@@ -126,7 +123,7 @@ const styles = theme => ({
 
 })
 
-const menus =["Recipes", "Plans", "About Us"]
+const menus =["recipes", "plans", "about us"]
 
 class Nav extends Component {
   constructor(props) {
@@ -157,7 +154,10 @@ class Nav extends Component {
 
                 <NavLink
                 exact to={menus[index]}  
-                color="inherit" className={classes.link} offset={-50} key={menu}>
+                color="inherit" 
+                className={classes.link} 
+                offset={-50} 
+                key={menus[index]}>
                 {menu}
                 </NavLink>
               )
@@ -165,13 +165,11 @@ class Nav extends Component {
             })}
           </div>
           <div className={classes.right}>
-          <NavLink exact to='/Contact'  className={classes.link} >
+          <NavLink exact to='/contact'  className={classes.link} >
             <Button
               variant="contained"
               color="white"
-              className={classes.button}
-              
-              
+              className={classes.button} 
             >
               Contact Us
             </Button>
