@@ -41,10 +41,7 @@
   margin-top: 40px;
 }
 
-ul>li {
-  margin-top:20px;
-  
-}
+
 
 .key {
   margin-right:20px; 
@@ -54,10 +51,7 @@ ul>li {
   color:white;
 }
 
-/* p.MuiTypography-body2-172{
-  margin-top: 15px;
-  margin-left: 70px;
-} */
+
 
 .MuiSvgIcon-root-51{
   color: #ff8500;
@@ -67,6 +61,14 @@ p.MuiTypography-body1-173{
   margin-top: 20px;
   margin-bottom: 20px;
   line-height: 1.5;
+}
+
+.HowItWorks-container_3-214{
+  margin-left: 100px;
+}
+
+ul>li{
+  margin-top: 40px;
 }
 
 /* Marcia 's css */
