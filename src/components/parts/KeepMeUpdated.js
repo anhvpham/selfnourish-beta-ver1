@@ -4,11 +4,9 @@ import { withStyles } from "@material-ui/core/styles"
 import InformationBlock from "./InformationBlock"
 import Button from "@material-ui/core/Button"
 
-import PropTypes from 'prop-types';
+
 import TextField from '@material-ui/core/TextField';
-import Input from '@material-ui/core/Input';
-import InputBase from '@material-ui/core/InputBase';
-import InputLabel from '@material-ui/core/InputLabel';
+
 
 
 
@@ -21,24 +19,39 @@ const styles = theme => ({
         paddingBottom:"30px",
         
         padding: "0px 40px",
-        marginBottom:"-100px",
+      
         textAlign:"left",
 
         marginTop: "120px",
-        marginBottom:"20px",
+    
 
         backgroundColor:"lightgrey",
         
-        
-        
+        [theme.breakpoints.down("sm")]: {
+          width: "95%",
+          paddingRight: "15px",
+          paddingLeft: "15px",
+          marginRight: "auto",
+          marginLeft: "auto",
+          textAlign:"center",
+          marginTop:"30px",
+      },
+ 
       },
 
-      container:{
-        margin:"auto",
-        maxWidth: "75rem"
+      container:{ 
+        
+          [theme.breakpoints.up('md')]:{
+            margin:"auto",
+            maxWidth: "75rem",
+          },
+          [theme.breakpoints.down('xs')]:{
+            maxWidth:"30rem",
+            margin:"0 auto",
+          },
+       
+
       },
-
-
       cssLabel: {
         color: 'black',
         
@@ -60,7 +73,7 @@ const styles = theme => ({
         
       },
      input:{
-         width:"500px",
+         width:"100%",
      },
 
      button:{
@@ -92,8 +105,8 @@ const KeepMeUpdated = props => {
               />
         </Grid>   
 
-        
-        <Grid item xs={12} md={5} className={classes.container}>
+        l
+        <Grid item xs={12} md={5} cassName={classes.container}>
 
         <TextField
             className={classes.input}
@@ -138,4 +151,5 @@ const KeepMeUpdated = props => {
 }
 
 export default withStyles(styles)(KeepMeUpdated)
+
 
