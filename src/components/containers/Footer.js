@@ -14,15 +14,12 @@ const styles = theme => ({
     // marginTop:"10px",
     background: "#353535",
     height: "50px",
-    marginTop:"-20px",
-    position:"fixed",
-    bottom:0,
-    width:"100%",
-    
+   margin:"auto",
+   padding:"0 20px"
   },
 
   container: {
-    maxWidth: "80em",
+    maxWidth: "80rem",
     margin: "auto"
   },
 
