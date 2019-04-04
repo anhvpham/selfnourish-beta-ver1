@@ -15,7 +15,8 @@ const styles = theme => ({
       display: "none"
     },
     margin: "10px",
-    "align-self": "end"
+    "align-self": "end",
+    paddingTop:"30px",
   }
 });
 class MenuButton extends Component {
