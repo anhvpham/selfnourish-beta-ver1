@@ -93,7 +93,8 @@ class Condition extends React.Component {
     if(!this.state.selectedCondition){
       return null
     } else {
-      console.log(this.state.selectedCondition)
+			document.body.scrollTop = 0;
+			document.documentElement.scrollTop = 0;
       return (
      
           <div className="condition-wrapper">

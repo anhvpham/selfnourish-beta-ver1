@@ -50,6 +50,9 @@ class Search extends Component {
 
 		}
 
+		document.body.scrollTop = 0;
+		document.documentElement.scrollTop = 0;
+		
     return (
       <div className="search-wrapper">
 				<form onSubmit={this.handleSubmit}>

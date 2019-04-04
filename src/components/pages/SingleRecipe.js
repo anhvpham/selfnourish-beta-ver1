@@ -63,7 +63,6 @@ class App extends React.Component {
     if(!this.state.currentRecipe.images){
       return null
     } else {
-      console.log(this.state.currentRecipe)
 			document.body.scrollTop = 0;
 			document.documentElement.scrollTop = 0;
       return (
