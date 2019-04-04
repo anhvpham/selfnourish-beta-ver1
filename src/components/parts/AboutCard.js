@@ -29,7 +29,8 @@ const styles = (theme) => ({
     },
 
     item1:{
-        margin:"50px",
+        maxWidth:"500px",
+        margin:"0 auto",
     },
 
     item2:{
