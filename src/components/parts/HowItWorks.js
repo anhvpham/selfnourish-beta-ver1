@@ -65,17 +65,17 @@ const styles = theme => ({
   },
 
   button:{
+    
+      "&:hover":{
+          background:"#ffab48",
+      },    
       alignSelf: "center",
       marginTop: "20px",
-      background: theme.palette.primary.main,
+      background: "#ff8500",
       color:"#fff",
       fontWeight:"bold",
       fontStyle:"normal"
-    
-    "&:hover":{
-          background:"#ffab48",
-      },    
-    
+   
     
 
 
