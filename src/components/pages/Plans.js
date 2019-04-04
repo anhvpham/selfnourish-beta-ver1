@@ -90,12 +90,9 @@ const Plans = props => {
 
                STAY UPDATED
             </Button>
-          </NavLink>  
+        </NavLink>  
        
-//         <Button href="/contact" color="primary" className={classes.button} variant="contained" size="large">
 
-//             STAY UPDATED
-//         </Button>
 
       
 
