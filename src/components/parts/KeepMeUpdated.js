@@ -18,7 +18,7 @@ const styles = theme => ({
         paddingTop: "30px",
         paddingBottom:"30px",
         
-        padding: "0px 40px",
+        padding: "0px 70px",
       
         textAlign:"left",
 

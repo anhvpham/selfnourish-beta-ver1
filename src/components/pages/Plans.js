@@ -28,8 +28,15 @@ const styles = theme => ({
         marginTop:"30px",
         color:"white",
         fontWeight:"bold",
-        marginBottom:"40px"
-    }
+        marginBottom:"40px",
+        
+    },
+   
+ link:{
+  
+  textDecoration:"none",
+ },
+ 
 })
    
    
