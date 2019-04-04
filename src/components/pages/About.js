@@ -28,8 +28,14 @@ const styles = theme => ({
         color:"white",
         fontWeight:"bold",
         marginBottom:"40px",
+        background:"#ff8500",
       
     },
+    
+    link:{
+    textDecoration:"none",
+    
+    }
 
     
    
@@ -88,7 +94,7 @@ const About = props => {
          <NavLink exact to='/contact'  className={classes.link} >
             <Button color="primary" className={classes.button} variant="extended" size="large">
 
-               STAY UPDATED
+               CONTACT US
             </Button>
         </NavLink>  
 
