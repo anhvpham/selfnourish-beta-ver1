@@ -1,3 +1,4 @@
+
 import React from "react"
 import Grid from "@material-ui/core/Grid"
 import { withStyles } from "@material-ui/core/styles"
@@ -5,6 +6,7 @@ import InformationBlock from "./InformationBlock"
 import List from '@material-ui/core/List';
 import Button from "@material-ui/core/Button"
 import { NavLink } from "react-router-dom"
+
 
 
 const styles = theme => ({
@@ -35,8 +37,12 @@ const styles = theme => ({
   },
 
   item:{
-    
+    // fontSize:"22px",
 
+    // [theme.breakpoints.down("sm")]: {
+    //   fontSize:"16px",
+
+    //   }
 
     
   },
@@ -90,7 +96,7 @@ const styles = theme => ({
     marginTop:"20px",
     fontStyle:"italic",
     fontFamily:"Raleway",
-    // padding:"90px 0px 40px 0px",
+    padding:"90px 0px 40px 0px",
 
     [theme.breakpoints.down("sm")]: {
       "border-top-left-radius":"25px" ,
@@ -106,7 +112,11 @@ const styles = theme => ({
 
   container_3:{
     padding: "40px 50px",
-    fontSize:"22px",
+    // paddingLeft:"70px",
+    // paddingTop:"40px",
+    //fontSize:"22px",
+    
+
     [theme.breakpoints.down("sm")]: {
     
       textAlign:"center",
@@ -124,16 +134,17 @@ const styles = theme => ({
     
     [theme.breakpoints.down("sm")]: {
     
-      margin:"10px",
+      margin:"0 auto",
       width:"200px",
      
     }  
   },
 
-
   link:{
     textDecoration:"none",
   }
+
+
   
 })
 
@@ -160,7 +171,7 @@ const HowItWorks = props => {
          <img className={classes.img} src={props.img} alt={props.alt} />  
         </Grid>
 
-        <Grid item xs={12} md={3} alignItems="stretch" spacing={20} className={classes.container_2}>  
+        <Grid item xs={12} md={4} alignItems="stretch" spacing={20} className={classes.container_2}>  
           <InformationBlock
             headline={props.headline}
             className={classes.item}
@@ -168,24 +179,13 @@ const HowItWorks = props => {
           />
 
         <Grid item xs={12} md={6} className={classes.item3}>
-           <NavLink exact to='/recipes'  className={classes.link} >
+        <NavLink exact to='/recipes'  className={classes.link} >
             <Button color="primary" className={classes.button} variant="extended" size="large">
 
                TRY IT NOW 
             </Button>
-          </NavLink> 
+          </NavLink>  
         </Grid>
-          {/* {props.button && (
-              <Button
-              href="#"
-              color="primary"
-              className={classes.button}
-              variant="contained"
-              size="large"
-              >
-                {props.button}
-              </Button>
-            )} */}
           
         </Grid>
         
