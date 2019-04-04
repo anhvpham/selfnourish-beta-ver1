@@ -59,8 +59,8 @@ const SimpleBarChart = props => {
         <YAxis dataKey="name" axisLine={false} tickLine={false} type="category" tick={{fontWeight: "bold", fontSize: "0.8em"}}>
             <Label position="insideLeft"></Label>
         </YAxis>
-        <Bar dataKey="value" barSize={20} fill='#90d200' radius={3}>
-            <LabelList dataKey="level" position="center" fontSize="0.6em" stroke="white"/>
+        <Bar dataKey="value" barSize={30} fill='#90d200' radius={3}>
+            <LabelList dataKey="level" position="center" fontSize="0.8em" stroke="white"/>
         </Bar>
       </BarChart>
     );
