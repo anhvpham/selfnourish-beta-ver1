@@ -86,7 +86,7 @@ const About = props => {
        
         <Button href="/contact" color="primary" className={classes.button} variant="contained" size="large">
 
-        Contact Us
+        CONTACT US
         </Button>
 
       
