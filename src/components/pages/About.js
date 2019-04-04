@@ -2,6 +2,7 @@ import React, {Component} from "react"
 import Typography from "@material-ui/core/Typography"
 import { withStyles } from "@material-ui/core/styles"
 import Button from "@material-ui/core/Button"
+import {NavLink} from "react-router-dom"
 
 
 import AboutCard from "../parts/AboutCard"
@@ -84,10 +85,12 @@ const About = props => {
         />
        
        
-        <Button href="/contact" color="primary" className={classes.button} variant="contained" size="large">
+         <NavLink exact to='/contact'  className={classes.link} >
+            <Button color="primary" className={classes.button} variant="extended" size="large">
 
-        CONTACT US
-        </Button>
+               STAY UPDATED
+            </Button>
+        </NavLink>  
 
       
 
