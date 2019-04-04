@@ -31,6 +31,7 @@ const styles = (theme) => ({
     item1:{
         maxWidth:"500px",
         margin:"0 auto",
+        marginBottom:"20px"
     },
 
     item2:{
