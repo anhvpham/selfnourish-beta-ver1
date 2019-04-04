@@ -100,7 +100,7 @@
 .recipe-total-ingredients-number{
 	grid-column: 3/ 4;
 	grid-row: 1 / 2;
-	font-family: "Raleway", sans-serif;
+	font-family: "Quicksand", sans-serif;
 	font-weight: 300;
 	font-size: 5em;
 	color: #ff8500;
@@ -422,9 +422,9 @@ div[data="recipe-card-footer"] svg{
 }
 
 .recipe-instructions-button{
-	font-size: .875em;
-	line-height: 0.2em;
-	height: 10px;
+	font-size: 1em;
+	line-height: 0.5em;
+	height: 12px;
 	padding: 10px 5px;
 	width: 150px;
 	left: 0px;
