@@ -7,6 +7,8 @@ import Header from "../../components/containers/Header"
 import Footer from "../../components/containers/Footer"   
 import Card1 from "../parts/Card1"
 
+import { NavLink } from "react-router-dom"
+
  
 
 const styles = theme => ({
@@ -81,11 +83,19 @@ const Plans = props => {
              para_1="Ready to start planning your next meal"
                 
         />
-       
-        <Button href="/contact" color="primary" className={classes.button} variant="contained" size="large">
+     
+     
+        <NavLink exact to='/contact'  className={classes.link} >
+            <Button color="primary" className={classes.button} variant="extended" size="large">
 
-            STAY UPDATED
-        </Button>
+               STAY UPDATED
+            </Button>
+          </NavLink>  
+       
+//         <Button href="/contact" color="primary" className={classes.button} variant="contained" size="large">
+
+//             STAY UPDATED
+//         </Button>
 
       
 
