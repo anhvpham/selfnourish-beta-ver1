@@ -4,7 +4,7 @@ import RecipeItem from '../parts/RecipeItem';
 import IngredientsList from '../parts/IngredientsList';
 import NutritionFactsContainer from '../parts/NutritionFactsContainer';
 import SearchRecipe from '../parts/SearchRecipe';
-import {Link} from "react-router-dom";
+import {Redirect} from "react-router-dom";
 
 class App extends React.Component {
   constructor(props) {
@@ -57,7 +57,7 @@ class App extends React.Component {
   render() {
 
 		if (this.state.redirectToFavourite) {
-			return <Link to={'/contact'} />
+			return <Redirect to={'/contact'} />
 		}
 
     if(!this.state.currentRecipe.images){
