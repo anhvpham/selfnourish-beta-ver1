@@ -1,5 +1,5 @@
 .single-recipe-wrapper{
-	max-width: 1000px;
+	max-width: 75rem;
 	margin: auto;
 }
 
@@ -105,7 +105,7 @@
 	font-size: 5em;
 	color: #ff8500;
 	margin: 0;
-	line-height: 3em;
+	line-height: 1em;
 }
 
 .recipe-total-ingredients {
@@ -178,7 +178,7 @@
 }
 
 .ingredients-image{
-	height: 37px;
+	height: 50px;
 	margin-right: 3px;
 	/* padding: 5px 0px; */
 }
@@ -199,7 +199,7 @@
 }
 
 .nutrition-facts-image{
-	height: 31px;
+	height: 50px;
 	margin-right: 5px;
 	margin-bottom: -5px;
 }
@@ -242,7 +242,7 @@
 }
 
 .nutrient-level{
-    width: 100px;
+    width: 110px;
     margin: 10px;   
 }
 
@@ -475,6 +475,10 @@ div[data="recipe-card-footer"] svg{
 	margin: 0px;
 }
 
+.ingredients-list li{
+	line-height: .2em;
+}
+
 .recipe-nutrition-facts{
 	width: 90%;
 	margin: auto;
@@ -486,12 +490,17 @@ div[data="recipe-card-footer"] svg{
 
 .nutrition-facts-wrapper{
 	grid-template-rows: 1fr;
-	grid-template-columns: 300px auto;
+	grid-template-columns: 400px auto;
 }
 
 .calories-level{
-	width: 300px;
+	width: 400px;
 	margin-bottom: 30px;
+}
+
+.nutrients-container{
+	width: 100%;
+	justify-content: space-between;
 }
 
 .favourite-div{

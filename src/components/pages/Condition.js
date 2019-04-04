@@ -110,7 +110,7 @@ class Condition extends React.Component {
  
                 <p className="condition-subtitle">Select a condition to view general guidelines and recipes for a healthy diet: </p>
                 <ul className="conditions-list">
-                    {listItems};
+                    {listItems}
                 </ul>
             </section>
             <section className="general-guideline-section">

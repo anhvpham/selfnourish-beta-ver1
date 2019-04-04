@@ -107,9 +107,9 @@ class App extends React.Component {
                   <Route path="/Recipes/Search/:nutrientConstraints" component={Search}/>
 									<Route path="/Recipes/single/:recipeId/:nutrientConstraints/:searchIngredient?" component={SingleRecipe}/>
                   <Route path="/Recipes" component={Condition}/>
-                  <Route exact path='/Contact' component={Contact}/>
-                  <Route exact path='/Plans' component={Plans} />
-                  <Route exact path='/About Us' component={About} />
+                  <Route path='/Contact' component={Contact}/>
+                  <Route path='/Plans' component={Plans} />
+                  <Route path='/About Us' component={About} />
                   
 
                 </Switch>

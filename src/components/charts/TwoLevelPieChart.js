@@ -58,13 +58,13 @@ class TwoLevelPieChart extends Component {
   }
   render () {
     return (
-      	<PieChart width={300} height={230}>
+      	<PieChart width={400} height={240}>
           <Pie
             dataKey = "value"
             activeIndex={this.state.activeIndex}
             activeShape={renderActiveShape}
             data={this.props.data}
-            cx={150}
+            cx={200}
             cy={110}
             innerRadius={60}
             outerRadius={85}

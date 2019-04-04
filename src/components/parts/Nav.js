@@ -2,7 +2,6 @@ import React, { Component } from "react"
 import { withStyles } from "@material-ui/core/styles"
 import PropTypes from "prop-types"
 import Button from "@material-ui/core/Button"
-import { Link, animateSrcroll as scroll } from "react-scroll";
 import { NavLink } from "react-router-dom"
 import {Grid} from "@material-ui/core/Grid";
 
@@ -153,10 +152,9 @@ class Nav extends Component {
               return (
 
                 <NavLink
-                exact to={menus[index]}  
+                to={`/${menus[index]}`}  
                 color="inherit" 
                 className={classes.link} 
-                offset={-50} 
                 key={menus[index]}>
                 {menu}
                 </NavLink>
@@ -165,7 +163,7 @@ class Nav extends Component {
             })}
           </div>
           <div className={classes.right}>
-          <NavLink exact to='/contact'  className={classes.link} >
+          <NavLink to='/contact'  className={classes.link} >
             <Button
               variant="contained"
               color="white"
