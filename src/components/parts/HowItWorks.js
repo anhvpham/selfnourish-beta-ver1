@@ -1,9 +1,11 @@
+
 import React from "react"
 import Grid from "@material-ui/core/Grid"
 import { withStyles } from "@material-ui/core/styles"
 import InformationBlock from "./InformationBlock"
 import List from '@material-ui/core/List';
 import Button from "@material-ui/core/Button"
+import { NavLink } from "react-router-dom"
 
 
 
@@ -14,8 +16,16 @@ const styles = theme => ({
     margin: "0px 50px",
     padding: "0px 40px",
     marginBottom:"-100px",
-    textAlign:"left"
-    
+    textAlign:"left",
+
+    [theme.breakpoints.down("sm")]:{
+
+      marginTop:"30px",
+      textAlign:"center",
+      margin: "0px 30px",
+      textAlign:"center",
+
+    },
     
   },
   container: {
@@ -27,10 +37,12 @@ const styles = theme => ({
   },
 
   item:{
-    
-   
+    // fontSize:"22px",
 
+    // [theme.breakpoints.down("sm")]: {
+    //   fontSize:"16px",
 
+    //   }
 
     
   },
@@ -42,10 +54,14 @@ const styles = theme => ({
     
     borderRadius:"50%",
     
+    
     [theme.breakpoints.down("sm")]: {
       display: "none"
-    }  
+    },  
     
+    [theme.breakpoints.up("md")]: {
+      marginBottom:"-10px",
+    }  
   },
 
   button:{
@@ -86,19 +102,47 @@ const styles = theme => ({
       "border-top-left-radius":"25px" ,
       "border-bottom-left-radius":"25px",
       textAlign:"center",
-    }  
+      padding:"20px",
+    } , 
+
+    [theme.breakpoints.up("md")]: {
+      padding:"90px 0px 40px 0px",
+    }
   },
 
   container_3:{
     padding: "40px 50px",
+    // paddingLeft:"70px",
+    // paddingTop:"40px",
+    //fontSize:"22px",
+    
+
+    [theme.breakpoints.down("sm")]: {
+    
+      textAlign:"center",
+      padding:"0px",
+      fontSize:"16px",
+     
+    }  
     
   },
 
   item_1 :{
     paddingTop:"20px",
-    marginTop:"10px"
+    marginTop:"10px",
+    width:"400px",
     
+    [theme.breakpoints.down("sm")]: {
+    
+      margin:"0 auto",
+      width:"200px",
+     
+    }  
   },
+
+  link:{
+    textDecoration:"none",
+  }
 
 
   
@@ -133,17 +177,15 @@ const HowItWorks = props => {
             className={classes.item}
             
           />
-          {props.button && (
-              <Button
-              href="#"
-              color="primary"
-              className={classes.button}
-              variant="contained"
-              size="large"
-              >
-                {props.button}
-              </Button>
-            )}
+
+        <Grid item xs={12} md={6} className={classes.item3}>
+        <NavLink exact to='/recipes'  className={classes.link} >
+            <Button color="primary" className={classes.button} variant="extended" size="large">
+
+               TRY IT NOW 
+            </Button>
+          </NavLink>  
+        </Grid>
           
         </Grid>
         

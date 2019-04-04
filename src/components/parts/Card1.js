@@ -10,18 +10,27 @@ import InformationBlock from "../parts/InformationBlock"
 const styles = theme => ({
   root: {
     
-    //margin: "auto",
-    //padding: "60px 30px",
-    //overflow: "hidden",
+   
     margin: "0px 50px",
+    marginBottom:"50px",
     padding: "0px 40px",
     textAlign:"center",
-    marginTop:"20px"
+    marginTop:"20px",
+   
+   
+   
+
+    [theme.breakpoints.down('sm')]:{
+      padding:"0",
+    
+    },
+
   },
   container:{
     maxWidth: "75em",
     margin: "auto",
     // marginTop:"40px"
+
 
   },
   item: {
@@ -29,7 +38,7 @@ const styles = theme => ({
     "-moz-box-shadow": "0px 3px 17px 1px rgba(0,0,0,0.1)",
     "box-shadow": "0px 3px 17px 1px rgba(0,0,0,0.1)",
     background: "#F5F5F5",
-    height: "80%",
+    height: "50vh",
     padding: "30px 30px 10px 30px",
     
 
@@ -46,15 +55,12 @@ const styles = theme => ({
     marginBottom:"50px",
   },  
   item3:{
-    marginTop:"30px",
+    marginTop:"90px",
     margin:"0 auto",
     fontSize:"20px"
   },
 
-  container1:{
-    height:"60vh",
-  }
- 
+
 })
 
 const Card1 = props => {
@@ -78,11 +84,9 @@ const Card1 = props => {
             <Grid container alignItems="stretch" spacing={40} className={classes.container1}>
                  <Grid item xs={12} md={4}>
                     <InformationBlock
-                    //header_align={props.header_align}
                     header_3={props.header_3}
-                    img={props.img_1}
-                    className={classes.img}
                     para_2={props.para_2}
+                    headline={props.headline_3}
                     align="center"
                     className={classes.item}
                     
@@ -92,23 +96,19 @@ const Card1 = props => {
 
                 <Grid item xs={12} md={4}>
                     <InformationBlock
-                    //header_align={props.header_align}
                     header_3={props.header_4}
-                    img={props.img_2}
-                    className={classes.img}
                     para_2={props.para_3}
+                    headline={props.headline_4}
                     align="center"
                     className={classes.item}
                 />
                 </Grid>
 
                 <Grid item xs={12} md={4}>
-                    <InformationBlock
-                    //header_align={props.header_align}
+                    <InformationBlock 
                     header_3={props.header_5}
-                    img={props.img_3}
-                    className={classes.img}
                     para_2={props.para_4}
+                    headline={props.headline_5}
                     align="center"
                     className={classes.item}
                 />

@@ -10,12 +10,22 @@ import InformationBlock from "../parts/InformationBlock"
 const styles = theme => ({
   root: {
     
-    //margin: "auto",
-    //padding: "60px 30px",
-    //overflow: "hidden",
+   
     margin: "0px 50px",
     padding: "0px 40px",
     textAlign:"left",
+
+  
+    [theme.breakpoints.down("sm")]:{
+
+      marginTop:"30px",
+      textAlign:"center",
+      margin: "0px 30px",
+
+    },
+
+
+
   },
   container:{
     maxWidth: "75em",
@@ -27,8 +37,8 @@ const styles = theme => ({
     "-moz-box-shadow": "0px 3px 17px 1px rgba(0,0,0,0.1)",
     "box-shadow": "0px 3px 17px 1px rgba(0,0,0,0.1)",
     background: "white",
-    height: "80%",
-    padding: "30px 30px 10px 30px",
+    height:"100%",
+    padding: "30px 30px 5px 30px",
 
     textAlign: "center",
     margin: "10px 0",
@@ -37,8 +47,17 @@ const styles = theme => ({
 
   img:{
     width:"50%",
-  }
+  },
 
+  item1:{
+    [theme.breakpoints.down('sm')]:{
+      marginBottom:"30px"
+
+    }
+  
+  },
+
+  
  
 })
 
@@ -52,10 +71,11 @@ const Features = props => {
             alignContent="space-around"
             className={classes.container}
           >
-            <Grid item xs={12} md={5}>
+            <Grid item xs={12} md={5} className={classes.item1}>
               <InformationBlock
                 header_2={props.header_2}
                 para_1={props.para_1}
+                className={classes.info1}
               />
             </Grid>
 
@@ -63,7 +83,7 @@ const Features = props => {
             <Grid container alignItems="stretch" spacing={40}>
                  <Grid item xs={12} md={4}>
                     <InformationBlock
-                    //header_align={props.header_align}
+  
                     header_3={props.header_3}
                     img={props.img_1}
                     className={classes.img}
@@ -76,7 +96,7 @@ const Features = props => {
 
                 <Grid item xs={12} md={4}>
                     <InformationBlock
-                    //header_align={props.header_align}
+                    
                     header_3={props.header_4}
                     img={props.img_2}
                     className={classes.img}
@@ -88,7 +108,7 @@ const Features = props => {
 
                 <Grid item xs={12} md={4}>
                     <InformationBlock
-                    //header_align={props.header_align}
+                    
                     header_3={props.header_5}
                     img={props.img_3}
                     className={classes.img}

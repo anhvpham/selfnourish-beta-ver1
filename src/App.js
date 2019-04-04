@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import MuiThemeProvider from '@material-ui/core/styles/MuiThemeProvider';
 import { createMuiTheme } from '@material-ui/core/styles';
 
-import { BrowserRouter, Route, Switch } from "react-router-dom";
+import { BrowserRouter, Route, Switch, NavLink, HashRouter } from "react-router-dom";
 
 
 //import index from "./index.css"
@@ -19,8 +19,8 @@ import Condition from "./components/pages/Condition"
 import Search from "./components/pages/Search"
 import SingleRecipe from "./components/pages/SingleRecipe"
 
-// import Header from "./components/containers/Header"
-// import Footer from "./components/containers/Footer"
+import Header from "./components/containers/Header"
+import Footer from "./components/containers/Footer"
 
 //custom theme color
 const theme = createMuiTheme({
@@ -99,6 +99,9 @@ class App extends React.Component {
          <div className="App">
         
             <BrowserRouter>
+            <div>
+              <Header />
+            
                 <Switch>
                   <Route exact path='/' component={Home} />
                   <Route path="/Recipes/Search/:nutrientConstraints" component={Search}/>
@@ -107,14 +110,13 @@ class App extends React.Component {
                   <Route exact path='/Contact' component={Contact}/>
                   <Route exact path='/Plans' component={Plans} />
                   <Route exact path='/About Us' component={About} />
-                  {/* <Route exact path='/Recipes' component={Condition} /> */}
-                  {/* <Route exact path='/Search' component={Search} />
-                  <Route exact path='/Recipe' component={SingleRecipe} /> */}
+                  
 
                 </Switch>
             
-            
-            
+              <Footer />           
+                </div>
+
             </BrowserRouter>
 
 

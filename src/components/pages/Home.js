@@ -1,4 +1,4 @@
- import React, { Component } from "react"
+  import React, { Component } from "react"
  import { withStyles } from "@material-ui/core/styles"
  import Typography from "@material-ui/core/Typography"
  import { Divider } from "@material-ui/core";
@@ -16,6 +16,7 @@ import KeepMeUpdated from "../parts/KeepMeUpdated"
 
 // //import assets
  import hero from "../../assets/hero/hero.png"
+ import heromobile from "../../assets/hero/hero_mobile.jpg"
 import howitworks from "../../assets/hero/how_it_works.png"
 import feature1 from "../../assets/features/feature1.png"
 import feature2 from "../../assets/features/feature2.svg"
@@ -26,18 +27,18 @@ import Footer from "../../components/containers/Footer"
 
 
 
-
-
-
 const styles = theme => ({
     root: {
       maxWidth: "100vw",
       overflow: "hidden",
-    //   maxWidth:"60rem"
+
     },
      
     header_1:{
         fontSize:"32px",
+        [theme.breakpoints.down("sm")]: {
+           fontSize:"24px",
+       }
     },
 
     hero: {
@@ -45,17 +46,25 @@ const styles = theme => ({
       position: "absolute",
       top:0,
       "z-index": -1, 
+
+      [theme.breakpoints.down("sm")]: {
+        width: "100vw",
+
     },
 
+},
 
-    img:{
 
-        display: "none",
+img:{
+
+    display: "none",
        
-       [theme.breakpoints.up("md")]: {
+    [theme.breakpoints.up("md")]: {
             marginTop:"-100px"
        }
     },
+
+  
 
     herosection:{
         marginTop:"-150px",
@@ -64,8 +73,15 @@ const styles = theme => ({
     howto1:{
         backgroundColor:"coral"
     },
+
+
+   whatis:{
+    [theme.breakpoints.down("sm")]: {
+       marginTop:"500px"
+    },
+   }
     
-    
+
   })
 
 
@@ -76,17 +92,20 @@ const Home = props => {
     return(
        
         <div className="herosection">
-            <Header />
+    
 
             <Hero 
+               img2={heromobile}
                header_1="SelfNourish" 
                headline="Pesonalized recipes for your lifestyle and indivdual dietary needs"
-               button="TRY IT NOW"
+            //    button="TRY IT NOW"
                id="home" 
-               img={hero}
+               img1={hero}
+               
+
                alt="hero"
             />
-
+ 
            
             
         
@@ -159,7 +178,6 @@ const Home = props => {
 
     
 
-        <Footer />        
         
 
        
@@ -176,5 +194,6 @@ const Home = props => {
 
 
  export default withStyles(styles) (Home);
+
 
 
