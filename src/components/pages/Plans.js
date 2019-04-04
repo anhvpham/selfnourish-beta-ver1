@@ -29,8 +29,14 @@ const styles = theme => ({
         color:"white",
         fontWeight:"bold",
         marginBottom:"40px",
-        textDecoration:"none",
-    }
+        
+    },
+   
+ link:{
+  
+  textDecoration:"none",
+ },
+ 
 })
    
    
