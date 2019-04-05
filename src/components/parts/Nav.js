@@ -92,7 +92,6 @@ const styles = theme => ({
       },
   
     margin: "0 50px",
-    marginRight:"0px",
     color:"black",
     fontWeight: "bold",
     cursor: "pointer",
@@ -106,6 +105,11 @@ const styles = theme => ({
     background: "white",
     fontWeight: "bold",
     fontSize:"16px",
+    
+    "&:hover": {
+        
+        color: theme.palette.primary.main,
+      },
    
 
     [theme.breakpoints.down("sm")]: {
