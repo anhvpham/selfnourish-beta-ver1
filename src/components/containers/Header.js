@@ -6,11 +6,13 @@ import styled from 'styled-components'
 
 const Wrapper = styled("div") ({
   root:{
-    padding: "5px 30px",
+    //padding: "5px 30px",
     position: "sticky",
     top: 0,
     backgroundColor:"white",
     zIndex: 999,
+    margin:"auto",
+   padding:"0 20px",
 
     
     }
