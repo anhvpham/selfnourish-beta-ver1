@@ -91,14 +91,15 @@ const styles = theme => ({
         color: theme.palette.primary.main
       },
   
-    margin: "0 50px",
+    //margin: "0 50px",
     marginRight:"0px"
     marginLeft:"0px",
     color:"black",
     fontWeight: "bold",
-    cursor: "pointer"
+    cursor: "pointer",
 
   },
+  
   button: {
     textTransform:"uppercase",
     borderRadius: "50px",
@@ -113,6 +114,8 @@ const styles = theme => ({
       margin: "0 auto"
     },
   }, 
+  
+  
   logoMobile: {
    
     [theme.breakpoints.up("md")]: {
