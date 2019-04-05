@@ -164,7 +164,7 @@ body {
 
 .button-green:hover {
 	border: 3px solid #b8ef40;
-  color: rgb(71, 71, 71);;
+  color: white;
   background-color: #b8ef40;	
 }
 
@@ -185,6 +185,7 @@ body {
 }
 
 .button-suggestions:hover{
+	color: white;
 	background-color: #90d200;
  	cursor: pointer;
 }

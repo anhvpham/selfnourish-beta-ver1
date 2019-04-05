@@ -13,7 +13,7 @@ const IngredientsList = (props) => {
             
             <h3 className="recipe-ingredient-heading heading-2"><img className="ingredients-image" src="/images/icon/ingredient.svg" alt="" aria-hidden="true"></img>Ingredients</h3>
             <p className="total-servings paragraph">Servings: {props.recipe.numberOfServings}</p>
-            <ul className="ingredients-list">{listItems}</ul>,
+            <ul className="ingredients-list paragraph">{listItems}</ul>,
        
         </section>
     );

@@ -18,7 +18,7 @@ import KeepMeUpdated from "../parts/KeepMeUpdated"
  import hero from "../../assets/hero/hero.png"
  import heromobile from "../../assets/hero/hero_mobile.jpg"
 import howitworks from "../../assets/hero/how_it_works.png"
-import feature1 from "../../assets/features/feature1.png"
+import feature1 from "../../assets/features/feature1.svg"
 import feature2 from "../../assets/features/feature2.svg"
 import feature3 from "../../assets/features/feature3.svg"
 
