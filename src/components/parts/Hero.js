@@ -27,6 +27,12 @@ const styles = (theme, props) => ({
     item: {
       textAlign: "left",
       marginTop:"-50px",
+        
+      [theme.breakpoints.up("md")]: {
+      width:"500px",
+      
+      
+      },    
 
       [theme.breakpoints.down("sm")]: {
        marginTop:"0px",
