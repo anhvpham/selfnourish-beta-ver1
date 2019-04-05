@@ -43,7 +43,7 @@ const SimpleBarChart = props => {
 
     return (
       <BarChart
-        width={450}
+        width={400}
         height={200}
         data={data}
         margin={{
