@@ -19,7 +19,7 @@ const styles = theme => ({
   },
 
   container: {
-    maxWidth: "80rem",
+    maxWidth: "75rem",
     margin: "auto"
   },
 
