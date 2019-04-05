@@ -48,7 +48,7 @@ const styles = theme => ({
 
   img:{
     width:"50%",
-    marginBottom:"10px",
+//     marginBottom:"10px",
   },
 
   item1:{
