@@ -82,6 +82,7 @@ const styles = theme => ({
 
 
     },
+   
     "&:hover": {
         
         color: theme.palette.primary.main,
@@ -92,7 +93,7 @@ const styles = theme => ({
   
     margin: "0 50px",
     marginRight:"0px"
-    marginLeft:0,
+    marginLeft:"0px",
     color:"black",
     fontWeight: "bold",
     cursor: "pointer"
