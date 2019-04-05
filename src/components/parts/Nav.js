@@ -92,7 +92,7 @@ const styles = theme => ({
       },
   
     //margin: "0 50px",
-    marginRight:"0px"
+    marginRight:"0px",
     marginLeft:"0px",
     color:"black",
     fontWeight: "bold",
