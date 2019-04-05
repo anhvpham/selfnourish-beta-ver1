@@ -71,6 +71,7 @@ const styles = theme => ({
       
       padding:"20px",
       textAlign:"center",
+      marginRight:"0px",
       
       "&:hover": {
         
