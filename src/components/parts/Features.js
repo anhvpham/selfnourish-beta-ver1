@@ -10,7 +10,7 @@ import InformationBlock from "../parts/InformationBlock"
 const styles = theme => ({
   root: {
     
-   
+    marginTop:"15px",
     margin: "0px 50px",
     padding: "0px 40px",
     textAlign:"left",
@@ -33,6 +33,7 @@ const styles = theme => ({
     
   },
   item: {
+    
     "-webkit-box-shadow": "0px 3px 17px 1px rgba(0,0,0,0.1)",
     "-moz-box-shadow": "0px 3px 17px 1px rgba(0,0,0,0.1)",
     "box-shadow": "0px 3px 17px 1px rgba(0,0,0,0.1)",
@@ -50,10 +51,11 @@ const styles = theme => ({
   },
 
   item1:{
+    
     [theme.breakpoints.down('sm')]:{
-      marginBottom:"30px"
+      marginBottom:"30px",
 
-    }
+    },
   
   },
 
