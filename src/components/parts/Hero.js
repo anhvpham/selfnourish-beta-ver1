@@ -29,7 +29,7 @@ const styles = (theme, props) => ({
       marginTop:"-50px",
         
       [theme.breakpoints.up("md")]: {
-      width:"500px",
+      width:"480px",
       
       
       },    
