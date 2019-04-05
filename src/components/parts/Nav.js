@@ -91,7 +91,9 @@ const styles = theme => ({
         color: theme.palette.primary.main
       },
   
-    margin: "0 50px",
+   marginTop:"0px",
+    marginBottom:"0px",
+    marginRight:"50px",
     color:"black",
     fontWeight: "bold",
     cursor: "pointer",
