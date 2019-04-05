@@ -36,7 +36,7 @@ section h2{
 .conditions-list {
 	grid-row: 3 / 4;
 	font-family: 'Quicksand', sans-serif;
-	font-size: 1em;
+	font-size: 0.8em;
 	list-style-type: none;
 	padding: 0px;
 	display: flex;
@@ -186,6 +186,11 @@ section h2{
 	width: 100%;
 	justify-items: center;
 }
+
+.recharts-surface{
+	width: 500;
+}
+
 .related-recipes-section{
 	width: 100%;
 	margin: auto;
