@@ -71,6 +71,7 @@ const styles = theme => ({
       
       padding:"20px",
       textAlign:"center",
+      
       "&:hover": {
         
         color: theme.palette.primary.main,
@@ -81,8 +82,16 @@ const styles = theme => ({
 
 
     },
+    "&:hover": {
+        
+        color: theme.palette.primary.main,
+      },
+      "&:.active": {
+        color: theme.palette.primary.main
+      },
   
     margin: "0 50px",
+    marginRight:"0px"
     marginLeft:0,
     color:"black",
     fontWeight: "bold",
