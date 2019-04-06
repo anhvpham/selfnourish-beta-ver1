@@ -44,6 +44,14 @@ const styles = theme => ({
     textAlign: "center",
     margin: "10px 0",
     
+    [theme.breakpoints.down("sm")]:{
+
+     "-webkit-box-shadow": "none",
+    "-moz-box-shadow": "none",
+    "box-shadow": "none",
+
+    },
+
 
   },
 
