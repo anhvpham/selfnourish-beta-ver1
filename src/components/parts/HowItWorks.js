@@ -134,12 +134,12 @@ const styles = theme => ({
   item_1 :{
     paddingTop:"20px",
     marginTop:"10px",
-    width:"400px",
+    maxWidth:"300px",
     
     [theme.breakpoints.down("sm")]: {
     
       margin:"0 auto",
-      width:"200px",
+      maxWidth:"200px",
      
     }  
   },
