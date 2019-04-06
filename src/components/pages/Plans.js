@@ -79,7 +79,7 @@ const Plans = props => {
 
             header_5="PROFESSIONAL"
 
-            para_4={[<ul><li>Prefered For Health Professionals</li>
+            para_4={[<ul>
                 <li>Manage Up To 10 Profiles</li>
                 <li>Able To Create Meal Plan </li>
                 <li>Add Up To 50 Favorite Recipes</li>
