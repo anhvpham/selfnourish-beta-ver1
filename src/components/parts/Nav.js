@@ -14,7 +14,7 @@ import LogoMobile from "../../assets/logo/logo_mobile.svg"
 
 const styles = theme => ({
   root: {
-    maxWidth: "80rem",
+    maxWidth: "85rem",
     backgroundColor:"transparent",
     margin: "0px auto",
     display: "flex",
