@@ -45,6 +45,8 @@ const styles = theme => ({
     margin: "10px 0",
     
     [theme.breakpoints.down("sm")]:{
+     paddingTop:"0px",
+     paddingBottom:"0px", 
 
      "-webkit-box-shadow": "none",
     "-moz-box-shadow": "none",
