@@ -44,6 +44,10 @@ const styles = theme => ({
     textAlign: "center",
     margin: "10px 0",
     
+     [theme.breakpoints.down("sm")]:{
+      paddingBottom:"0px", 
+     },
+    
   },
 
   img:{
