@@ -34,10 +34,10 @@ const styles = theme => ({
   },
   item: {
     
-    "-webkit-box-shadow": "0px 3px 17px 1px rgba(0,0,0,0.1)",
-    "-moz-box-shadow": "0px 3px 17px 1px rgba(0,0,0,0.1)",
-    "box-shadow": "0px 3px 17px 1px rgba(0,0,0,0.1)",
-    background: "white",
+//     "-webkit-box-shadow": "0px 3px 17px 1px rgba(0,0,0,0.1)",
+//     "-moz-box-shadow": "0px 3px 17px 1px rgba(0,0,0,0.1)",
+//     "box-shadow": "0px 3px 17px 1px rgba(0,0,0,0.1)",
+//     background: "white",
     height:"100%",
     padding: "30px 30px 5px 30px",
 
