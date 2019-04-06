@@ -53,7 +53,7 @@ const styles = (theme, props) => ({
     },
 
     img2: {
-      width: "100%",
+      width: "103%",
  
       margin:"0 auto",
       
