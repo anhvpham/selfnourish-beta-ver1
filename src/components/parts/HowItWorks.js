@@ -139,7 +139,7 @@ const styles = theme => ({
     [theme.breakpoints.down("sm")]: {
     
       margin:"0 auto",
-      maxWidth:"200px",
+    
      
     }  
   },
