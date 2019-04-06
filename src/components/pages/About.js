@@ -67,16 +67,16 @@ const About = props => {
 
             img_1={vu}
             headerName_1="Vu Anh Pham"
-            position_1="Project Manager / Frontend Developer"
+            position_1="Project Manager / Developer"
             
         
             img_2={marcia}
             headerName_2="Marcia Emi Isejima"
-            position_2="Backend developer / QA"
+            position_2="Developer / QA"
 
             img_3={tanya}
             headerName_3="Thanyathorn Sangthien"
-            position_3="UX Designer/ Animator"
+            position_3="UX / UI Designer"
 
             img_4={merry}
             headerName_4="Merry Nguyen"
