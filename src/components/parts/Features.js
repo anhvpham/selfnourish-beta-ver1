@@ -32,11 +32,18 @@ const styles = theme => ({
     margin: "auto",
     
   },
+	gridItem: {
+		"& img": {
+			width: "40%",
+			height: "110px",
+			marginTop: "20px",
+		},
+	},
   item: {
     
-    "-webkit-box-shadow": "0px 3px 17px 1px rgba(0,0,0,0.1)",
-    "-moz-box-shadow": "0px 3px 17px 1px rgba(0,0,0,0.1)",
-    "box-shadow": "0px 3px 17px 1px rgba(0,0,0,0.1)",
+    // "-webkit-box-shadow": "0px 3px 17px 1px rgba(0,0,0,0.1)",
+    // "-moz-box-shadow": "0px 3px 17px 1px rgba(0,0,0,0.1)",
+    // "box-shadow": "0px 3px 17px 1px rgba(0,0,0,0.1)",
     background: "white",
     height:"100%",
     padding: "30px 30px 5px 30px",
@@ -113,7 +120,7 @@ const Features = props => {
                  
                 </Grid>
 
-                <Grid item xs={12} md={4}>
+                <Grid item xs={12} md={4} className={classes.gridItem}>
                     <InformationBlock
                     
                     header_3={props.header_4}
