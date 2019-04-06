@@ -68,7 +68,7 @@ const Plans = props => {
 
             header_4="PREMIUM"
             
-            para_3={[<ul><li>Prefered For Single User</li>
+            para_3={[<ul>
                 <li>Recieve One Free Consult From Experts For Meal Plan</li>
                 <li>Customize Ingredient List Based On Personal Need</li>
                 <li>Add Up To 20 Favorite Recipes</li>
