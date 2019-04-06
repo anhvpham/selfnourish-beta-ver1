@@ -59,6 +59,11 @@ const styles = theme => ({
     },
   
   },
+  
+  img1:{
+    
+    height:"90px",
+  }
 
   
  
@@ -102,7 +107,7 @@ const Features = props => {
                     
                     header_3={props.header_4}
                     img={props.img_2}
-                    className={classes.img}
+                    className={classes.img1}
                     para_2={props.para_3}
                     align="center"
                     className={classes.item}
