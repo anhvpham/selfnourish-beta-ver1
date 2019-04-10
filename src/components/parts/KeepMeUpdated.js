@@ -103,7 +103,7 @@ const KeepMeUpdated = props => {
         className={classes.container}
         >
 
-        <Grid item xs={12} md={3}>
+        <Grid item xs={12} md={4}>
               <InformationBlock
                 header_2={props.header_2}
                 para_1={props.para_1}
@@ -111,7 +111,7 @@ const KeepMeUpdated = props => {
         </Grid>   
 
         
-        <Grid item xs={12} md={6} cassName={classes.container}>
+        <Grid item xs={12} md={5} cassName={classes.container}>
 
         <TextField
             className={classes.input}
