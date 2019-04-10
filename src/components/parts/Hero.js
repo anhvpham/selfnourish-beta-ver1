@@ -14,7 +14,7 @@ const styles = (theme, props) => ({
         margin:"0",
         padding:"0",
         textAlign:"center",
-        fontSize:"20px",
+       
        
       }  
 
