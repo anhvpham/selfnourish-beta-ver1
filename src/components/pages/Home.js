@@ -170,7 +170,7 @@ const Home = props => {
             <KeepMeUpdated 
 
                 header_2="Keep Me Updated"
-                para_1="Recieving daily recipe recoomendation via email"
+                para_1="Recieving daily recipe recommendation via email"
             
             />
         
