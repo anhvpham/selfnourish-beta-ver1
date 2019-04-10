@@ -146,10 +146,19 @@ const styles = theme => ({
 
   link:{
     textDecoration:"none",
-  }
+  },
 
-
-  
+  headline:{
+    
+    
+    [theme.breakpoints.down("sm")]: {
+    
+      fontSize:"16px",
+    
+     
+    }, 
+    
+  },
 })
 
 const HowItWorks = props => {
@@ -178,7 +187,7 @@ const HowItWorks = props => {
         <Grid item xs={12} md={4} alignItems="stretch" spacing={20} className={classes.container_2}>  
           <InformationBlock
             headline={props.headline}
-            className={classes.item}
+            className={classes.headline}
             
           />
 
