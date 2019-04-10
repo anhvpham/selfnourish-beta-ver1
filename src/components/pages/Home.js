@@ -4,7 +4,8 @@
  import { Divider } from "@material-ui/core";
  import Button from "@material-ui/core/Button"
  import SvgIcon from '@material-ui/core/SvgIcon'
-// // import parts
+
+
  import Hero from "../parts/Hero"
 import Features from "../parts/Features"
 import HowItWorks from "../parts/HowItWorks"
