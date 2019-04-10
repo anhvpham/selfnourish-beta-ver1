@@ -67,12 +67,14 @@ const styles = theme => ({
       cssFocused: {},
       notchedOutline: {
         
-        backgroundColor: "white",
-        borderRadius: "25px",
+//         backgroundColor: "white",
+//         borderRadius: "25px",
         
       },
      input:{
          width:"100%",
+         backgroundColor: "white",
+        borderRadius: "25px",
      },
 
      button:{
