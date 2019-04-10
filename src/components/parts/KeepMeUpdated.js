@@ -82,9 +82,7 @@ const styles = theme => ({
          color:"white",
          fontWeight:"bold",
          "&:hover":{
-          background:"#ffab48",
-           
-     
+          background:"#ffab48",  
           },    
              
       },    
@@ -124,7 +122,7 @@ const KeepMeUpdated = props => {
             placeholder = ""
             
             margin="dense"
-            borderRadius="25px"
+         
             
            
             InputLabelProps={{
