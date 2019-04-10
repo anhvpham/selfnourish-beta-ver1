@@ -52,33 +52,47 @@ const styles = theme => ({
        
 
       },
-      cssLabel: {
-        color: 'black',
+//       cssLabel: {
+//         color: 'black',
         
-      },
+//       },
     
-      cssOutlinedInput: {
-        '&$cssFocused $notchedOutline': {
+//       cssOutlinedInput: {
+//         '&$cssFocused $notchedOutline': {
         
-          fontFamily:"Raleway",
-          borderColor:"#ffab48",
-        }
-      },
+//           fontFamily:"Raleway",
+//           borderColor:"#ffab48",
+//         }
+//       },
     
-      cssFocused: {},
-      notchedOutline: {
+//       cssFocused: {},
+//       notchedOutline: {
         
-        borderWidth:"1px",
-        borderRadius:"25px",  
+//         borderWidth:"1px",
+//         borderRadius:"25px",  
         
-      },
-     input:{
-         width:"100%",
-         backgroundColor: "white",
+//       },
+//      input:{
+//          width:"100%",
+//          backgroundColor: "white",
 //         borderRadius: "25px",
-        borderColor:"#ffab48", 
-     },
+//         borderColor:"#ffab48", 
+//      },
 
+    cssLabel: {
+    // color: "white"
+  },
+  cssOutlinedInput: {
+    "&$cssFocused $notchedOutline": {
+      borderColor: `${theme.palette.primary.main} !important`
+    }
+  },
+  cssFocused: {},
+  notchedOutline: {
+    borderWidth: "1px"
+    // borderColor: "white !important"
+  },
+    
      button:{
          color:"white",
          fontWeight:"bold",
