@@ -26,8 +26,12 @@ import React, { Component } from "react"
     button:{
         marginTop:"30px",
         color:"white",
-        fontWeight:"bold"
-    }
+        fontWeight:"bold",
+    },
+  
+  contact:{
+      height:"90vh",
+  },
 })   
 
  const Contact = props => {
