@@ -37,7 +37,8 @@ const styles = (theme, props) => ({
       [theme.breakpoints.down("sm")]: {
        marginTop:"0px",
        textAlign: "center",
-       paddingLeft:"20px",   
+       paddingLeft:"20px",  
+       paddingRight:"20px",   
       
       
       }  
