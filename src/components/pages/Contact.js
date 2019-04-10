@@ -43,7 +43,7 @@ import React, { Component } from "react"
        
         <ContactUs
         header_2="We'd love to hear from you"
-        para_1="Thank you for your interest to SelfNourish! if you would like to keep up to date about SelfNourish, please fill in the form below"
+        para_1="Thank you for your interest to SelfNourish! if you would like to keep up to date about SelfNourish, please email us at selfnourish.ca@gmail.com or fill in the form below"
         id="Contact us"
         />
 
