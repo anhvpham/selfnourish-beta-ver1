@@ -31,7 +31,11 @@ import React, { Component } from "react"
   
   contact:{
       height:"90vh",
-      marginBottom:"30px",
+   
+   [theme.breakpoints.down('xs')]:{
+    marginBottom:"30px",
+   },
+      
   },
 })   
 
