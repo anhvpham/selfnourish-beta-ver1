@@ -93,9 +93,7 @@ const styles = theme => ({
     // borderColor: "white !important"
   },
     
-  input:{
-      width:"100%",
-  },
+
     
      button:{
          color:"white",
