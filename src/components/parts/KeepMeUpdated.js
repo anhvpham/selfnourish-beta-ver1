@@ -54,29 +54,53 @@ const styles = theme => ({
       },
 
 
-     input:{
-         width:"90%",
-         backgroundColor: "white",
+//      input:{
+//          width:"90%",
+//          backgroundColor: "white",
          
-        borderColor:"#ffab48", 
-        borderRadius:"50px", 
+//         borderColor:"#ffab48", 
+//         borderRadius:"50px", 
+//      },
+
+//     cssLabel: {
+//      color: "black",
+//   },
+//   cssOutlinedInput: {
+//     "&$cssFocused $notchedOutline": {
+//       borderColor: `${theme.palette.primary.main} !important`
+//     }
+//   },
+//   cssFocused: {},
+//   notchedOutline: {
+//     borderWidth: "1px"
+    
+//   },
+    
+  cssLabel: {
+        color: 'black',
+        
+      },
+    
+      cssOutlinedInput: {
+        '&$cssFocused $notchedOutline': {
+          //borderColor: "black",
+          fontFamily:"Raleway"
+        }
+      },
+    
+      cssFocused: {},
+      notchedOutline: {
+        //borderWidth: '1px',
+        //borderColor: 'black !important',
+        
+        borderRadius: "25px",
+        
+      },
+     input:{
+         width:"100%",
+         backgroundColor: "white",
+         borderRadius: "25px",
      },
-
-    cssLabel: {
-     color: "black",
-  },
-  cssOutlinedInput: {
-    "&$cssFocused $notchedOutline": {
-      borderColor: `${theme.palette.primary.main} !important`
-    }
-  },
-  cssFocused: {},
-  notchedOutline: {
-    borderWidth: "1px"
-    
-  },
-    
-
     
      button:{
          color:"white",
