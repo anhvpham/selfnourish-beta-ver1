@@ -84,8 +84,7 @@ const styles = theme => ({
          "&:hover":{
           background:"#ffab48",
            
-         [theme.breakpoints.up('md')]:{
-           marginRight:"0px",
+     
           },    
              
       },    
@@ -125,6 +124,7 @@ const KeepMeUpdated = props => {
             placeholder = ""
             
             margin="dense"
+            borderRadius="25px"
             
            
             InputLabelProps={{
@@ -146,7 +146,7 @@ const KeepMeUpdated = props => {
 
          </Grid> 
 
-        <Grid item xs={12} md={2} className={classes.container}>
+        <Grid item xs={12} md={3} className={classes.container}>
             <Button color="primary" className={classes.button} variant="contained" size="large">
 
                Subscribe 
