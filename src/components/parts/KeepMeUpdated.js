@@ -55,9 +55,8 @@ const styles = theme => ({
 
 
      input:{
-         width:"100%",
+         width:"90%",
          backgroundColor: "white",
-        borderRadius: "25px",
         borderColor:"#ffab48", 
      },
 
