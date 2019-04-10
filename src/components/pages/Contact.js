@@ -27,14 +27,13 @@ import React, { Component } from "react"
         marginTop:"30px",
         color:"white",
         fontWeight:"bold",
+      [theme.breakpoints.down('sm')]:{
+            marginTop:"0px",
+   },
     },
   
   contact:{
       height:"90vh",
-   
-   [theme.breakpoints.down('xs')]:{
-    marginBottom:"30px",
-   },
       
   },
 })   
