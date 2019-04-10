@@ -145,7 +145,7 @@ const KeepMeUpdated = props => {
 
          </Grid> 
 
-        <Grid item xs={12} md={3} className={classes.container}>
+        <Grid item xs={12} md={2} className={classes.container}>
             <Button color="primary" className={classes.button} variant="contained" size="large">
 
                Subscribe 
