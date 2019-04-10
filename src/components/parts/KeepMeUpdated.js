@@ -52,35 +52,17 @@ const styles = theme => ({
        
 
       },
-//       cssLabel: {
-//         color: 'black',
-        
-//       },
-    
-//       cssOutlinedInput: {
-//         '&$cssFocused $notchedOutline': {
-        
-//           fontFamily:"Raleway",
-//           borderColor:"#ffab48",
-//         }
-//       },
-    
-//       cssFocused: {},
-//       notchedOutline: {
-        
-//         borderWidth:"1px",
-//         borderRadius:"25px",  
-        
-//       },
-//      input:{
-//          width:"100%",
-//          backgroundColor: "white",
-//         borderRadius: "25px",
-//         borderColor:"#ffab48", 
-//      },
+
+
+     input:{
+         width:"100%",
+         backgroundColor: "white",
+        borderRadius: "25px",
+        borderColor:"#ffab48", 
+     },
 
     cssLabel: {
-    // color: "white"
+     color: "black",
   },
   cssOutlinedInput: {
     "&$cssFocused $notchedOutline": {
@@ -90,7 +72,7 @@ const styles = theme => ({
   cssFocused: {},
   notchedOutline: {
     borderWidth: "1px"
-    // borderColor: "white !important"
+    
   },
     
 
